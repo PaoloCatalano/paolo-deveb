@@ -3,7 +3,7 @@ import Name from "../components/Name"
 import Seo from "../components/Seo"
 import { Link } from "gatsby"
 import gif from "../images/paolo_deveb.gif"
-export default function ErrorPage() {
+export default function SuccessPage() {
   const desc = "Thank you"
 
   return (
