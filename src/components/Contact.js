@@ -16,25 +16,13 @@ export default function Contact() {
         name="testing-contact"
         method="POST"
         netlify-honeypot="bot-field"
-        netlify // data-netlify='true' OR netlify
+        data-netlify="true" // data-netlify='true' OR netlify
         action="/success"
       >
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="testing-contact" />
-        <input
-          type="text"
-          type="text"
-          name="name"
-          placeholder="name"
-          required
-        />
-        <input
-          type="email"
-          type="email"
-          name="email"
-          placeholder="e-mail"
-          required
-        />
+        <input type="text" name="name" placeholder="name" required />
+        <input type="email" name="email" placeholder="e-mail" required />
         <textarea
           name="message"
           cols="30"

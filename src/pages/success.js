@@ -9,7 +9,7 @@ export default function ErrorPage() {
   return (
     <>
       <Seo title="Success Page" description={desc} image={gif} />
-      <main className="error">
+      <main className="success">
         <div className="center" style={{ fontSize: "5vw" }}>
           Your message has been exported!
         </div>
