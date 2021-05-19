@@ -12,15 +12,7 @@ export default function Contact() {
         paolo12587@gmail.com
       </a>
       <p>Or write me a message by simply filling up the form below:</p>
-      <form
-        name="testing-contact"
-        method="POST"
-        netlify-honeypot="bot-field"
-        data-netlify="true" // data-netlify='true' OR netlify
-        action="/success"
-      >
-        <input type="hidden" name="bot-field" />
-        <input type="hidden" name="form-name" value="testing-contact" />
+      <form name="contact" netlify action="/success">
         <input type="text" name="name" placeholder="name" required />
         <input type="email" name="email" placeholder="e-mail" required />
         <textarea

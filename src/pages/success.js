@@ -3,12 +3,13 @@ import Name from "../components/Name"
 import Seo from "../components/Seo"
 import { Link } from "gatsby"
 import gif from "../images/paolo_deveb.gif"
-export default function SuccessPage() {
+
+const SuccessPage = () => {
   const desc = "Thank you"
 
   return (
     <>
-      <Seo title="Success Page" description={desc} image={gif} />
+      <Seo title="Success Page" description="Success page of deveb" />
       <main className="success">
         <div className="center" style={{ fontSize: "5vw" }}>
           Your message has been exported!
@@ -28,3 +29,5 @@ export default function SuccessPage() {
     </>
   )
 }
+
+export default SuccessPage
