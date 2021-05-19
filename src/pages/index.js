@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import WinBox from "../components/WinBox"
+import ModalBox from "../components/ModalBox"
 import Name from "../components/Name"
 import Projects from "../components/Projects"
 import Links from "../components/Links"
@@ -10,7 +10,7 @@ import Tech from "../components/Tech"
 import { useGlobalContext } from "../context/context"
 import Footer from "../components/Footer"
 
-export default function Home({ data }) {
+export default function Home() {
   const {
     isAboutOpen,
     setIsAboutOpen,
@@ -47,8 +47,6 @@ export default function Home({ data }) {
     y: "20%",
   }
 
-  console.log(data)
-
   return (
     <Layout>
       <main className="container">
@@ -71,19 +69,19 @@ export default function Home({ data }) {
         <Footer />
       </div>
       {isAboutOpen && (
-        <WinBox {...aboutProps}>
+        <ModalBox {...aboutProps}>
           <About />
-        </WinBox>
+        </ModalBox>
       )}
       {isContactOpen && (
-        <WinBox {...contactProps}>
+        <ModalBox {...contactProps}>
           <Contact />
-        </WinBox>
+        </ModalBox>
       )}
       {isTechOpen && (
-        <WinBox {...techProps}>
+        <ModalBox {...techProps}>
           <Tech />
-        </WinBox>
+        </ModalBox>
       )}
     </Layout>
   )

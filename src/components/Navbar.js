@@ -54,6 +54,7 @@ export default function Navbar() {
             setIsContactOpen(false)
             setIsTechOpen(false)
           }}
+          disabled={isTechOpen || isAboutOpen || isContactOpen}
         >
           <Link to="/music">music</Link>
         </button>

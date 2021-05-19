@@ -27,6 +27,15 @@
   --color6: "#6367A4";
   --color7: "#6B607B";
   --color8: "#50556F"; */
+  --const: #61afef;
+  --error: #e06c75;
+  --new: #c678dd;
+  --date: #98c379;
+  --giallo: #e5c07b;
+}
+::selection {
+  background-color: var(--lightgrigio);
+  color: #000;
 }
 
 /* Normalize.css */
@@ -199,7 +208,7 @@ figure {
   margin: 0;
 }
 form {
-  margin: 0;
+  margin: 0 -11px;
 }
 form {
   display: flex;
@@ -270,13 +279,7 @@ input[type="submit"] {
   cursor: pointer;
   *overflow: visible;
 }
-button[disabled],
-button[disabled]:hover,
-input[disabled] {
-  cursor: default;
-  color: var(--grigio);
-  text-shadow: none;
-}
+
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -367,6 +370,7 @@ a:before {
   content: "/ ";
   color: var(--grigio);
 }
+
 .projects a::before {
   content: "&#8627;";
   content: "↳ ";
@@ -463,10 +467,6 @@ a:hover {
     opacity: 1;
   }
 }
-/* WinBox Classes */
-.wb-body {
-  background: var(--background-2) !important;
-}
 .loading {
   display: grid;
   place-items: center;
@@ -545,6 +545,7 @@ a:hover {
 
 .flick-neon {
   animation: flicker 1.5s infinite alternate;
+  z-index: 99;
 }
 @keyframes flicker {
   0%,
@@ -584,4 +585,21 @@ a:hover {
   .flick-neon {
     animation: none;
   }
+}
+
+/* disable buttons */
+button[disabled],
+button[disabled],
+button[disabled]:hover,
+input[disabled] {
+  cursor: default;
+  color: var(--grigio);
+  text-shadow: none;
+}
+
+button[disabled] a {
+  cursor: default;
+  color: var(--grigio);
+  text-shadow: none;
+  pointer-events: none;
 }
