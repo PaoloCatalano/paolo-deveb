@@ -12,12 +12,12 @@ const siteMetadata = {
 }
 module.exports = {
   siteMetadata: siteMetadata,
-  flags: {
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PRESERVE_WEBPACK_CACHE: true,
-    FAST_DEV: true,
-    DEV_SSR: true,
-  },
+  // flags: {
+  //   PRESERVE_FILE_DOWNLOAD_CACHE: true,
+  //   PRESERVE_WEBPACK_CACHE: true,
+  //   FAST_DEV: true,
+  //   DEV_SSR: true,
+  // },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

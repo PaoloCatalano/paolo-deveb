@@ -30,10 +30,11 @@ const SEO = ({ title, description, image, article }) => {
     <Helmet
       title={seo.title}
       titleTemplate={titleTemplate}
-      htmlAttributes={{ lang: seo.language }}
+      htmlAttributes={{ lang: seo.language, translate: "no" }}
     >
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
+      <meta name="google" content="notranslate" />
 
       {seo.url && <meta property="og:url" content={seo.url} />}
 

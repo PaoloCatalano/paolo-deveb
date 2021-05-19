@@ -12,9 +12,6 @@ export default function About() {
         Hello, my name is Paolo, I am a freelance web developer, web designer,
         UI/UX, music compose and digital content.
       </p>
-      <section className="arrow">
-        <header></header>
-      </section>
       <p>
         My <span className="blue">const</span>ant passion in IT and{" "}
         <span className="pink">new</span>{" "}
