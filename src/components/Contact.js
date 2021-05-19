@@ -12,7 +12,11 @@ export default function Contact() {
         paolo12587@gmail.com
       </a>
       <p>Or write me a message by simply filling up the form below:</p>
-      {/* <form name="contact" netlify action="/success">
+      <form
+        name="contact"
+        action="https://formspree.io/f/xnqlplrk"
+        method="POST"
+      >
         <input type="text" name="name" placeholder="name" required />
         <input type="email" name="email" placeholder="e-mail" required />
         <textarea
@@ -23,21 +27,6 @@ export default function Contact() {
           required
         ></textarea>
         <input type="submit" value="submit" />
-      </form> */}
-      <form name="contact" netlify>
-        <p>
-          <label>
-            Name <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Email <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
       </form>
       <Footer />
     </div>
