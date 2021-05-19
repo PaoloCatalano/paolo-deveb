@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 export default function Contact() {
   return (
     <div className="content">
-      <Name path="contact_me>" />
+      <Name text="contact_me>" />
       <p>Thank you for visiting my web page!</p>
       <p>Feel free to contact me at the following email:</p>
       <a className="neon" href="mailto:paolo12587@gmail.com">

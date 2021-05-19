@@ -12,9 +12,11 @@ export default function ErrorPage() {
       <main className="error">
         <div className="center cursor">404 ERROR</div>
         <Name text={desc} />
-        <button>
-          <Link to="/">Home</Link>
-        </button>
+
+        <Link to="/" className="flick-neon">
+          Home
+        </Link>
+
         <img
           src={gif}
           alt="paolo catalano deveb web development"

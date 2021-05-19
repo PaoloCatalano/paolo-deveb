@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Seo from "../components/Seo"
+import Name from "../components/Name"
 
 export default function Music() {
   return (
@@ -8,7 +9,7 @@ export default function Music() {
       <Seo title="Music" description="Music content" />
 
       <main className="container">
-        My music
+        <Name text="Work in progress. . . >" />
         <button>
           <Link to="/">Home</Link>
         </button>

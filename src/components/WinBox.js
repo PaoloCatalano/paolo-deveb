@@ -79,9 +79,21 @@ export default function WinBox({ children, closeFunction }) {
         top: "5%",
         left: "5%",
         background: "var(--background-2)",
+        width: "80vw",
+        resize: "both",
+        overflow: "hidden",
+        minWidth: 270,
+        maxWidth: "85vw",
+        minHeight: 100,
       }}
+      className="neon-shadow"
     >
-      <button onClick={closeFunction}> - CLOSE - </button>
+      <button
+        onClick={closeFunction}
+        style={{ padding: "4px 12px", fontFamily: "var(--console-font)" }}
+      >
+        - CLOSE -
+      </button>
       {children}
     </div>
   )
