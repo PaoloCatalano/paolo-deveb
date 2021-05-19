@@ -12,6 +12,12 @@ const siteMetadata = {
 }
 module.exports = {
   siteMetadata: siteMetadata,
+  flags: {
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    DEV_SSR: true,
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -38,7 +44,7 @@ module.exports = {
       options: {
         name: `Paolo Catalano deveb - Web Developer`,
         short_name: `paolo_deveb`,
-        start_url: `/`,
+        start_url: `https://paolo-deveb.netlify.app`,
         background_color: `#1c1c35`,
         theme_color: `#00aa00`,
         display: `standalone`,

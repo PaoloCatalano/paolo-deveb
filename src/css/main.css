@@ -371,11 +371,38 @@ a:before {
   color: var(--grigio);
 }
 
-.projects a::before {
+.projects a::before,
+.arrow header::before {
+  position: absolute;
   content: "&#8627;";
   content: "↳ ";
   color: var(--grigio);
+  transform: translate(-15px, -5px);
 }
+
+.arrow header {
+  user-select: none;
+  transform: translateX(15px);
+  position: relative;
+  color: var(--lightgrigio);
+  text-transform: uppercase;
+}
+.tech-list {
+  padding-left: 1rem;
+}
+.tech-list li {
+  font-size: 14px;
+  line-height: 2em;
+  padding-bottom: 0.8em;
+}
+.tech-list a {
+  font-size: 18px;
+  /* neon */
+  color: rgb(253, 253, 253);
+  text-shadow: rgb(0 23 22) 0px 0px 2px, rgb(3 237 249 / 46%) 0px 0px 3px,
+    rgb(3 237 249 / 46%) 0px 0px 5px, rgb(3 237 249 / 46%) 0px 0px 8px;
+}
+
 .projects a:after {
   content: "";
 }
@@ -603,4 +630,20 @@ button[disabled] a {
   color: var(--grigio);
   text-shadow: none;
   pointer-events: none;
+}
+
+.blue {
+  color: var(--const);
+}
+.pink {
+  color: var(--new);
+}
+.red {
+  color: var(--error);
+}
+.yellow {
+  color: var(--giallo);
+}
+.green {
+  color: var(--date);
 }

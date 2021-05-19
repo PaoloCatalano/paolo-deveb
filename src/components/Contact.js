@@ -6,12 +6,17 @@ export default function Contact() {
   return (
     <div className="content">
       <Name text="contact_me>" />
-      <p>Thank you for visiting my web page!</p>
+      <p>
+        Thank you <span className="pink">for</span> visiting my web page!
+      </p>
       <p>Feel free to contact me at the following email:</p>
       <a className="neon" href="mailto:paolo12587@gmail.com">
         paolo12587@gmail.com
       </a>
-      <p>Or write me a message by simply filling up the form below:</p>
+      <p>
+        Or <span className="blue">let</span>'s stay in touch by simply filling
+        up the form below:
+      </p>
       <form
         name="contact"
         action="https://formspree.io/f/xnqlplrk"
