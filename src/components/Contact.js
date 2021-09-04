@@ -1,6 +1,7 @@
 import React from "react"
 import Name from "../components/Name"
 import Footer from "../components/Footer"
+import Form from "../components/Form"
 
 export default function Contact() {
   return (
@@ -17,22 +18,7 @@ export default function Contact() {
         Or <span className="blue">let</span>'s stay in touch by simply filling
         up the form below:
       </p>
-      <form
-        name="contact"
-        action="https://formspree.io/f/xnqlplrk"
-        method="POST"
-      >
-        <input type="text" name="name" placeholder="name" required />
-        <input type="email" name="email" placeholder="e-mail" required />
-        <textarea
-          name="message"
-          cols="30"
-          rows="5"
-          placeholder="message..."
-          required
-        ></textarea>
-        <input type="submit" value="submit" />
-      </form>
+      <Form />
       <Footer />
     </div>
   )

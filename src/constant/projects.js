@@ -4,6 +4,17 @@ const projects = [
   {
     url: (
       <a
+        href="https://www.costanzadicorrado.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        costanza dicorrado
+      </a>
+    ),
+  },
+  {
+    url: (
+      <a
         href="https://www.theivycoworking.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -31,6 +42,17 @@ const projects = [
         rel="noopener noreferrer"
       >
         ilariaserena
+      </a>
+    ),
+  },
+  {
+    url: (
+      <a
+        href="https://levelupquiz.netlify.app"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        level up quiz
       </a>
     ),
   },

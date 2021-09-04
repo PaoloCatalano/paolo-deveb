@@ -21,7 +21,7 @@ export default function ModalBox({ children, closeFunction }) {
         onClick={closeFunction}
         style={{ padding: "4px 12px", fontFamily: "var(--console-font)" }}
       >
-        - CLOSE -
+        x CLOSE x
       </button>
       {children}
     </div>

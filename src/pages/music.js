@@ -7,12 +7,17 @@ export default function Music() {
   return (
     <>
       <Seo title="Music" description="Music content" />
-
-      <main className="container">
-        <Name text="Work in progress. . . >" />
-        <button>
-          <Link to="/">Home</Link>
-        </button>
+      <nav>
+        <ul>
+          <li>
+            <button>
+              <Link to="/">Home</Link>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <main className="container" style={{ textAlign: "center" }}>
+        <Name text="Music Projects>" />
       </main>
     </>
   )

@@ -22,6 +22,9 @@ export default function About() {
       <div className="loading">
         <img src={photo} alt="profile head" />
       </div>
+      <p>🅿️ 🅰️ 🐽 💪 🐽</p>
+      <p>🅿️ 🅰️ 📀 🛴 📀</p>
+      <p>🌛 📧 🖖 📧 🅱️️</p>
       <Footer />
     </div>
   )
