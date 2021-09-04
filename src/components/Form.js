@@ -13,7 +13,7 @@ export default function Form() {
         <div className="center" style={{ textAlign: "center" }}>
           Your message has been exported!
         </div>
-        <Name text={`https://Thank you/${name}`} />
+        <Name text={`://Thank you/${name}`} />
       </>
     )
   }

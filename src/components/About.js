@@ -22,9 +22,40 @@ export default function About() {
       <div className="loading">
         <img src={photo} alt="profile head" />
       </div>
-      <p>🅿️ 🅰️ 🐽 💪 🐽</p>
-      <p>🅿️ 🅰️ 📀 🛴 📀</p>
-      <p>🌛 📧 🖖 📧 🅱️️</p>
+      <p>
+        <span role="img" aria-label="P">
+          🅿️
+        </span>
+        <span role="img" aria-label="A">
+          🅰️
+        </span>
+        <span role="img" aria-label="O">
+          📀
+        </span>{" "}
+        <span role="img" aria-label="L">
+          🛴
+        </span>
+        <span role="img" aria-label="O">
+          📀
+        </span>{" "}
+      </p>
+      <p>
+        <span role="img" aria-label="D">
+          🌛
+        </span>
+        <span role="img" aria-label="E">
+          📧
+        </span>
+        <span role="img" aria-label="V">
+          🖖
+        </span>
+        <span role="img" aria-label="E">
+          📧
+        </span>
+        <span role="img" aria-label="B">
+          🅱️️
+        </span>
+      </p>
       <Footer />
     </div>
   )

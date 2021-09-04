@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Seo from "../components/Seo"
 import Name from "../components/Name"
+import EmbedMusic from "../components/EmbedMusic"
 
 export default function Music() {
   return (
@@ -16,8 +17,9 @@ export default function Music() {
           </li>
         </ul>
       </nav>
-      <main className="container" style={{ textAlign: "center" }}>
+      <main className="container">
         <Name text="Music Projects>" />
+        <EmbedMusic />
       </main>
     </>
   )
