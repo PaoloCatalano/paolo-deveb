@@ -10,7 +10,7 @@ export default function About() {
 
       <p>
         Hello, my name is Paolo, I am a freelance web developer, web designer,
-        UI/UX, music compose and digital content.
+        UI/UX, music composer and digital content creator.
       </p>
       <p>
         My <span className="blue">const</span>ant passion in IT and{" "}
@@ -22,7 +22,7 @@ export default function About() {
       <div className="loading">
         <img src={photo} alt="profile head" />
       </div>
-      <p>
+      <p style={{ fontSize: 5 }}>
         <span role="img" aria-label="P">
           🅿️
         </span>
@@ -39,7 +39,7 @@ export default function About() {
           📀
         </span>{" "}
       </p>
-      <p>
+      <p style={{ fontSize: 5 }}>
         <span role="img" aria-label="D">
           🌛
         </span>

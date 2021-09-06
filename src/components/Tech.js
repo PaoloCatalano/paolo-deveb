@@ -12,8 +12,9 @@ export default function Tech() {
       </p>
       <p>
         In order to build your next-generation static or dynamic web site,
-        e-commerce, landing page, drive, blog or mobile application, I implement
-        the following technologies: <span className="pink">&#123;</span>
+        e-commerce, landing page, drive storage, blog or mobile application, I
+        implement the following technologies:{" "}
+        <span className="pink">&#123;</span>
       </p>
       <section className="arrow tech-list">
         <header>frameworks and libraries</header>
