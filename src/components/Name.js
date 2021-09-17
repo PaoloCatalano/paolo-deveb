@@ -23,7 +23,7 @@ export default function Name({ path = "", text = "paolo_deveb>" }) {
 
   return (
     <h1 style={{ wordBreak: "break-all" }}>
-      {path || name.join("")}
+      {path || name}
       <span className="cursor">_</span>
     </h1>
   )
