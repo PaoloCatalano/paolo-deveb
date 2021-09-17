@@ -58,22 +58,24 @@ export default function Home() {
       <main className="container">
         <Name />
         {isTitleComplete ? (
-          <article className="connecting">
-            <section className="projects">
-              <h2>My projects:</h2>
-              <Projects />
-            </section>
-            <div>
-              <h2>You can find me on:</h2>
-              <Links />
+          <>
+            <article className="connecting">
+              <section className="projects">
+                <h2>My projects:</h2>
+                <Projects />
+              </section>
+              <div>
+                <h2>You can find me on:</h2>
+                <Links />
+              </div>
+            </article>
+            <div className="small-screen">
+              <Footer />
             </div>
-          </article>
+          </>
         ) : (
-          <article style={{ height: "200vh" }}>.</article>
+          <article style={{ height: "200vh" }}></article>
         )}
-        <div className="small-screen">
-          <Footer />
-        </div>
       </main>
       <div className="wide-screen">
         <Footer />
