@@ -5,7 +5,7 @@ import Youtube from "./Youtube"
 
 export default function EmbedMusic() {
   return (
-    <article className="connecting appear">
+    <article className="connecting">
       <section className="projects" style={{ width: "100%" }}>
         <Bandcamp />
         <Soundcloud />

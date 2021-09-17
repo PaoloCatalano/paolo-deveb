@@ -17,6 +17,7 @@ export default function Name({ path = "", text = "paolo_deveb>" }) {
     }
 
     if (count <= commercialName.length) timer(typing, 100)
+
     return clearTimeout(timer)
     // eslint-disable-next-line
   }, [name])

@@ -481,10 +481,9 @@ a:hover {
   /* neon */
   text-shadow: none;
 }
-
+/* 
 .appear {
   animation: appear 1.7s forwards step-end 1;
-  /* animation-delay: 3s; */
 }
 
 @keyframes appear {
@@ -494,7 +493,7 @@ a:hover {
   to {
     opacity: 1;
   }
-}
+} */
 .loading {
   display: grid;
   place-items: center;

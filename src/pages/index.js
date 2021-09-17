@@ -25,8 +25,6 @@ export default function Home() {
       setIsAboutOpen(false)
     },
     title: "About Me",
-    x: "3%",
-    y: "10%",
   }
 
   const contactProps = {
@@ -34,8 +32,6 @@ export default function Home() {
       setIsContactOpen(false)
     },
     title: "Contact Me",
-    x: "6%",
-    y: "15%",
   }
 
   const techProps = {
@@ -43,24 +39,38 @@ export default function Home() {
       setIsTechOpen(false)
     },
     title: "Technologies",
-    x: "9%",
-    y: "20%",
   }
+
+  const [isTitleComplete, setIsTitleComplete] = React.useState(false)
+
+  React.useEffect(() => {
+    function timer() {
+      setTimeout(() => {
+        setIsTitleComplete(true)
+      }, 1700)
+    }
+    timer()
+    return clearTimeout(timer)
+  }, [isTitleComplete])
 
   return (
     <Layout>
       <main className="container">
         <Name />
-        <article className="connecting appear">
-          <section className="projects">
-            <h2>My projects:</h2>
-            <Projects />
-          </section>
-          <div>
-            <h2>You can find me on:</h2>
-            <Links />
-          </div>
-        </article>
+        {isTitleComplete ? (
+          <article className="connecting">
+            <section className="projects">
+              <h2>My projects:</h2>
+              <Projects />
+            </section>
+            <div>
+              <h2>You can find me on:</h2>
+              <Links />
+            </div>
+          </article>
+        ) : (
+          <article></article>
+        )}
         <div className="small-screen">
           <Footer />
         </div>
