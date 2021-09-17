@@ -47,7 +47,7 @@ export default function Home() {
     function timer() {
       setTimeout(() => {
         setIsTitleComplete(true)
-      }, 1700)
+      }, 900)
     }
     timer()
     return clearTimeout(timer)
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </article>
         ) : (
-          <article style={{ height: "100vh" }}></article>
+          <article style={{ height: "200vh" }}>.</article>
         )}
         <div className="small-screen">
           <Footer />

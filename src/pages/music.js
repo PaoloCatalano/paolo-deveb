@@ -12,7 +12,7 @@ export default function Music() {
     function timer() {
       setTimeout(() => {
         setIsTitleComplete(true)
-      }, 1900)
+      }, 1000)
     }
     timer()
     return clearTimeout(timer)
@@ -35,7 +35,7 @@ export default function Music() {
         {isTitleComplete ? (
           <EmbedMusic />
         ) : (
-          <article style={{ height: "100vh" }}></article>
+          <article style={{ height: "150vh" }}></article>
         )}
         <Footer />
       </main>
