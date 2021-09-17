@@ -35,7 +35,7 @@ export default function Music() {
         {isTitleComplete ? (
           <EmbedMusic />
         ) : (
-          <article style={{ height: "200vh" }}></article>
+          <article style={{ height: "100vh" }}></article>
         )}
         <Footer />
       </main>

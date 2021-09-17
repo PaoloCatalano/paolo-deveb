@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </article>
         ) : (
-          <article></article>
+          <article style={{ height: "100vh" }}></article>
         )}
         <div className="small-screen">
           <Footer />
