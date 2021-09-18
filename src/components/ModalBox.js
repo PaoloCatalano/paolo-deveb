@@ -12,7 +12,7 @@ export default function ModalBox({ children, closeFunction }) {
         resize: "both",
         overflow: "hidden",
         minWidth: 270,
-        maxWidth: "99vw",
+        maxWidth: "900px",
         minHeight: 100,
       }}
       className="neon-shadow"
