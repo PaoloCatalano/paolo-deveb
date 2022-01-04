@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 
-export default function Name({ path = "", text = "paolo_deveb>" }) {
+export default function Name({ path = "", text = "paolo_deveb" }) {
   const commercialName = text
   const letters = [...commercialName]
   const [name, setName] = useState([])
@@ -23,9 +23,8 @@ export default function Name({ path = "", text = "paolo_deveb>" }) {
   }, [name])
 
   return (
-    <h1 style={{ wordBreak: "break-all" }}>
-      {path || name}
-      <span className="cursor">_</span>
+    <h1 className="typed">
+      {path || name}&gt;<span className="cursor">_</span>
     </h1>
   )
 }

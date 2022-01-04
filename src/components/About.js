@@ -1,6 +1,5 @@
 import React from "react"
 import Name from "../components/Name"
-import Footer from "../components/Footer"
 import photo from "../images/8-bit-head.png"
 
 export default function About() {
@@ -56,7 +55,6 @@ export default function About() {
           🅱️️
         </span>
       </p>
-      <Footer />
     </div>
   )
 }

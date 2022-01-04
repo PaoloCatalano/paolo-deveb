@@ -1,6 +1,5 @@
 import React from "react"
 import Name from "../components/Name"
-import Footer from "../components/Footer"
 import TechTemplate from "./TechTemplate"
 
 export default function Tech() {
@@ -28,7 +27,6 @@ export default function Tech() {
         <span className="yellow">technologies</span>
         <span className="pink">()</span>;
       </p>
-      <Footer />
     </div>
   )
 }

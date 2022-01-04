@@ -57,11 +57,16 @@ export default function Home() {
     <Layout>
       <main className="container">
         <Name />
+
         {isTitleComplete ? (
           <>
-            <article className="connecting">
+            <article className="hero">
+              <div className="slogan">
+                Creation of Front and Back-end for your{" "}
+                <span className="neon">web sites_</span>
+              </div>
               <section className="projects">
-                <h2>My projects:</h2>
+                <h2>See my main projects:</h2>
                 <Projects />
               </section>
               <div>

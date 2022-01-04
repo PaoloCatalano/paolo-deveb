@@ -18,7 +18,13 @@ export default function Form() {
     )
   }
   return (
-    <form name="contact" onSubmit={handleSubmit}>
+    <form
+      name="contact"
+      onSubmit={handleSubmit}
+      style={{
+        background: "var(--background-dark)",
+      }}
+    >
       <input
         type="text"
         name="name"
@@ -45,7 +51,15 @@ export default function Form() {
         required
       ></textarea>
       <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <input type="submit" value="submit" disabled={state.submitting} />
+      <div>
+        <button
+          className="btn-submit"
+          type="submit"
+          disabled={state.submitting}
+        >
+          SEND
+        </button>
+      </div>
     </form>
   )
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import Name from "../components/Name"
-import Footer from "../components/Footer"
 import Form from "../components/Form"
 
 export default function Contact() {
@@ -8,9 +7,9 @@ export default function Contact() {
     <div className="content">
       <Name text="contact_me>" />
       <p>
-        Thank you <span className="pink">for</span> visiting my web page!
+        Thank you <span className="pink">for</span> visiting my web page! Feel
+        free to contact me at the following email:
       </p>
-      <p>Feel free to contact me at the following email:</p>
       <a className="neon" href="mailto:paolo12587@gmail.com">
         paolo12587@gmail.com
       </a>
@@ -19,7 +18,6 @@ export default function Contact() {
         up the form below:
       </p>
       <Form />
-      <Footer />
     </div>
   )
 }

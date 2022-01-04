@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,13 +9,18 @@
 :root {
   --text: #00aa00;
   --background: #1c1c35;
+  --background-dark: #07070d;
+  --background-light: #2b2b50;
   --background-2: #2b2b3d;
+  --background-2-transparent: #2b2b3ddb;
   --grigio: #50556f;
   --lightgrigio: #9494ac;
   --white: rgb(255, 255, 255);
   --normal-font: "Roboto Slab", serif;
   --console-font: "VT323", monospace;
+  --close-icon-font: "Chango", cursive;
   --spacing: 1px;
+  --maxWidth: 70rem;
   /* --text2: "#9494AC";
   --background-2: "#2B2B3D";
   --primary: "#E89873";
@@ -32,12 +39,20 @@
   --new: #c678dd;
   --date: #98c379;
   --giallo: #e5c07b;
+  --deep-shadow: 4px 3px 4px 0px rgb(0 0 0 / 90%),
+    0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --light-neon-shadow: rgb(0 23 22) 0px 0px 2px,
+    rgb(3 237 249 / 46%) 0px 0px 3px, rgb(3 237 249 / 46%) 0px 0px 5px,
+    rgb(3 237 249 / 46%) 0px 0px 8px;
+  --transition: all 0.3s ease-in-out;
 }
 ::selection {
-  background-color: var(--lightgrigio);
-  color: #000;
+  color: var(--text);
+  background-color: var(--background-light);
 }
-
+::-webkit-scrollbar {
+  width: 0;
+}
 /* Normalize.css */
 article,
 aside,
@@ -88,6 +103,7 @@ body {
   margin: 0;
   color: var(--white);
   background-color: var(--background);
+  overflow-x: hidden;
 }
 a:focus {
   outline: none;
@@ -240,12 +256,13 @@ textarea {
 input,
 select,
 textarea {
-  background-color: #000;
+  background-color: transparent;
   color: var(--white);
-  margin: 0.5rem;
-  padding: 0.05rem;
+  margin: 1rem;
+  padding: 0.1rem 0.5rem;
   font-size: 150%;
   letter-spacing: 1px;
+  border-bottom: 1px solid var(--background);
 }
 input::placeholder,
 textarea::placeholder {
@@ -266,12 +283,14 @@ textarea::-ms-input-placeholder {
 
 button,
 input {
+  max-width: 200px;
+
   line-height: normal;
   /* neon */
   color: rgb(253, 253, 253);
-  text-shadow: rgb(0 23 22) 0px 0px 2px, rgb(3 237 249 / 46%) 0px 0px 3px,
-    rgb(3 237 249 / 46%) 0px 0px 5px, rgb(3 237 249 / 46%) 0px 0px 8px;
+  text-shadow: var(--light-neon-shadow);
 }
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -309,7 +328,13 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   vertical-align: top;
+  letter-spacing: 2px;
+  border: 1px solid var(--background);
 }
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -348,6 +373,7 @@ svg {
 
 .projects {
   color: var(--text);
+  margin-top: 3rem;
 }
 nav {
   width: 100vw;
@@ -374,7 +400,8 @@ a:before {
 }
 
 .projects a::before,
-.arrow header::before {
+.arrow header::before,
+.slogan::before {
   position: absolute;
   content: "&#8627;";
   content: "↳ ";
@@ -401,8 +428,7 @@ a:before {
   font-size: 18px;
   /* neon */
   color: rgb(253, 253, 253);
-  text-shadow: rgb(0 23 22) 0px 0px 2px, rgb(3 237 249 / 46%) 0px 0px 3px,
-    rgb(3 237 249 / 46%) 0px 0px 5px, rgb(3 237 249 / 46%) 0px 0px 8px;
+  text-shadow: var(--light-neon-shadow);
 }
 
 .projects a:after {
@@ -415,43 +441,20 @@ a:hover {
   color: var(--text);
 }
 /* Custom Classes */
+.typed {
+  word-break: break-all;
+  width: fit-content;
+}
 .links li {
   margin-bottom: 0.8rem;
 }
 .container {
-  max-width: 450px;
-  margin: 4rem auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: stretch;
-  height: 70vh;
+  max-width: var(--maxWidth);
+  display: block;
+  margin: 4rem auto;
+  /*NEW height: 70vh; */
 }
-.connecting {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  word-break: break-all;
-}
-@media screen and (max-width: 440px) {
-  .container {
-    max-width: 70vw;
-    margin: 4rem auto 1rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    height: 70vh;
-  }
-  .connecting {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-}
+
 .cursor {
   font-weight: bold;
   animation: blink 1s step-end infinite;
@@ -474,8 +477,7 @@ a:hover {
 .neon {
   /* neon */
   color: rgb(253, 253, 253);
-  text-shadow: rgb(0 23 22) 0px 0px 2px, rgb(3 237 249 / 46%) 0px 0px 3px,
-    rgb(3 237 249 / 46%) 0px 0px 5px, rgb(3 237 249 / 46%) 0px 0px 8px;
+  text-shadow: var(--light-neon-shadow);
 }
 *::before,
 *::after {
@@ -556,6 +558,14 @@ a:hover {
     display: block;
   }
 }
+
+.close-icon {
+  padding: 1px 12px;
+  font-family: var(--close-icon-font);
+  transform: rotateZ(45deg);
+  font-size: x-large;
+}
+
 /* 404 & success */
 .error,
 .success {
@@ -607,7 +617,7 @@ a:hover {
   }
 } */
 .neon-shadow {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--deep-shadow);
 }
 
 @media screen and (prefers-reduced-motion) {
@@ -718,8 +728,171 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  border: 1px solid var(--text);
   -webkit-text-fill-color: var(--white);
   -webkit-box-shadow: 0 0 0px 1000px #000 inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Custom button */
+.btn-submit {
+  display: block;
+  margin: 2rem auto 3rem auto;
+  padding: 0.4rem 0.7rem;
+  background-color: var(--background-light);
+  border-radius: 2px;
+}
+
+.slogan {
+  letter-spacing: var(--spacing);
+  text-transform: uppercase;
+  font-size: larger;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.file {
+  letter-spacing: var(--spacing);
+  font-variant: small-caps;
+  font-size: larger;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  color: var(--grigio);
+  pointer-events: none;
+  font-family: var(--console-font);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  max-width: var(--maxWidth);
+  width: 100%;
+  height: 100%;
+}
+.card {
+  display: grid;
+  padding: 0.6rem;
+  width: 300px;
+  height: 180px;
+  background-color: var(--background-light);
+  box-shadow: var(--deep-shadow);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-card a {
+  font-size: xx-large;
+  transition: var(--transition);
+  opacity: 0;
+}
+.hero-card a::before {
+  opacity: 0;
+}
+.hero-card a div {
+  font-size: large;
+  padding-left: 0.5rem;
+  color: var(--grigio);
+  font-variant: small-caps;
+}
+.hero-card svg {
+  border-radius: 50%;
+  box-shadow: var(--light-neon-shadow);
+}
+.card-pic-frame {
+  width: 280px;
+  height: 155px;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+}
+.card-pic {
+  position: absolute;
+  z-index: 1;
+}
+.card-name {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: var(--background-2-transparent);
+  transition: var(--transition);
+  opacity: 1;
+}
+.card-name h1 {
+  width: fit-content;
+  font-size: x-large;
+}
+.card-title {
+  font-size: larger;
+  text-transform: uppercase;
+}
+.card-label {
+  font-size: small;
+  color: var(--grigio);
+  font-variant: small-caps;
+  pointer-events: none;
+}
+.card-desc {
+  font-size: medium;
+  font-variant: small-caps;
+  padding: 0 0.8rem;
+  color: var(--lightgrigio);
+}
+.card-tech {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-link {
+  display: block;
+  text-align: center;
+}
+.card-link a {
+  color: var(--text);
+  text-shadow: none;
+}
+.card-link a::before {
+  opacity: 0;
+}
+.card-link a:hover {
+  text-shadow: var(--light-neon-shadow);
+}
+/* CARD HOVER EFFECT */
+.card:hover,
+.card:focus {
+  padding: 1rem;
+  width: 400px;
+  height: 555px;
+}
+.card:hover a::before,
+.card:focus a::before,
+.card:hover .hero-card a,
+.card:focus .hero-card a {
+  opacity: 1;
+}
+
+.card:hover .card-name,
+.card:focus .card-name {
+  background: transparent;
+  opacity: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    margin-left: 2rem;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
 }
