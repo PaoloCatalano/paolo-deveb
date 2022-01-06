@@ -24,12 +24,12 @@ export default function Music() {
       <Seo title="Music" description="Music content" />
       <nav>
         <Links>
-          <button>
+          <button style={{ margin: "0 1rem 0.5rem 1rem" }}>
             <Link to="/">Home</Link>
           </button>
         </Links>
       </nav>
-      <main className="container" style={{ height: "100vh" }}>
+      <main className="container" style={{ height: "100vh", width: "90vw" }}>
         <Name text="music_projects" />
         {isTitleComplete ? (
           <>
