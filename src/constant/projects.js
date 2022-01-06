@@ -4,27 +4,27 @@ const projects = [
     title: "Costanza Dicorrado",
     url: "https://www.costanzadicorrado.com",
     desc:
-      "make up artist Catanese ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc",
+      "Landing page with CTA buttons and artistic portfolio of this young but talented Italian Make Up Artist",
     tech: ["Gatsby.js", "Contentful", "Netlify"],
-    git: "https://www.github.com",
+    git: "https://github.com/PaoloCatalano/costanzadicorrado",
   },
   {
     id: 2,
     title: "Robertaebasta UK",
     url: "https://www.robertaebasta.co.uk",
     desc:
-      "London art gallery ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc",
+      "London Art Gallery with a huge collection of masterpieces and an automatic generated details page for each article",
     tech: ["Gatsby.js", "Contentful", "Netlify"],
-    git: "https://www.github.com",
+    git: "https://github.com/PaoloCatalano/robertaebastalondon",
   },
   {
     id: 3,
-    title: "Ilaria Serena",
-    url: "https://www.ilariaserena.cloud",
+    title: "Alex Television",
+    url: "https://alextv.netlify.app",
     desc:
-      "Thetahaeling and many more ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc ecc",
-    tech: ["Gatsby.js", "Contentful", "Netlify"],
-    git: "https://www.github.com",
+      "Small project implementing serverless functions and YouTube API for selected videos in the lost world of the 80s TV",
+    tech: ["Gatsby functions", "API", "Netlify"],
+    git: "https://github.com/PaoloCatalano/alextv",
   },
 ]
 

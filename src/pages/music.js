@@ -4,6 +4,7 @@ import Seo from "../components/Seo"
 import Name from "../components/Name"
 import EmbedMusic from "../components/EmbedMusic"
 import Footer from "../components/Footer"
+import Links from "../components/Links"
 
 export default function Music() {
   const [isTitleComplete, setIsTitleComplete] = React.useState(false)
@@ -22,18 +23,20 @@ export default function Music() {
     <div style={{ overflowX: "clip" }}>
       <Seo title="Music" description="Music content" />
       <nav>
-        <ul>
-          <li>
-            <button>
-              <Link to="/">Home</Link>
-            </button>
-          </li>
-        </ul>
+        <Links>
+          <button>
+            <Link to="/">Home</Link>
+          </button>
+        </Links>
       </nav>
       <main className="container" style={{ height: "100vh" }}>
-        <Name text="music_projects>" />
+        <Name text="music_projects" />
         {isTitleComplete ? (
-          <EmbedMusic />
+          <>
+            <div className="slogan">music composer for any genre you like.</div>
+            <h2 className="projects">Listen of free tracks:</h2>
+            <EmbedMusic />
+          </>
         ) : (
           <article style={{ height: "150vh" }}></article>
         )}

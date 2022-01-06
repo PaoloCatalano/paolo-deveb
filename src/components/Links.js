@@ -1,9 +1,10 @@
 import React from "react"
-import link from "../constant/links"
-export default function Links() {
+import links from "../constant/links"
+export default function Links({ children }) {
   return (
     <ul className="links">
-      {link.map(link => {
+      {children}
+      {links.map(link => {
         const { id, icon, url } = link
         return (
           <li key={id}>

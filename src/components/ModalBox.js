@@ -13,6 +13,7 @@ export default function ModalBox({
         position: "absolute",
         top: `${top}`,
         width: `${width}`,
+        zIndex: 9,
       }}
     >
       <div

@@ -1,4 +1,5 @@
 import React from "react"
+import Loader from "./Loader"
 
 export default function Bandcamp() {
   return (
@@ -15,7 +16,12 @@ export default function Bandcamp() {
       {bandcampList
         .sort((a, b) => a.order - b.order)
         .map(({ genre, title, src, albumSrc, albumTitle }) => (
-          <div key={title} style={{ marginBottom: "3rem" }}>
+          <div
+            className="connection"
+            key={title}
+            style={{ marginBottom: "3rem" }}
+          >
+            <Loader />
             <header>{genre}</header>
             <h2>{title}</h2>
             <iframe title={title} src={src} seamless>

@@ -1,5 +1,6 @@
 import React from "react"
 import Video from "../components/Video"
+import Loader from "./Loader"
 
 export default function Soundcloud() {
   return (
@@ -16,7 +17,12 @@ export default function Soundcloud() {
       {soundcloudList
         .sort((a, b) => a.order - b.order)
         .map(({ genre, title, src }) => (
-          <div key={src} style={{ marginBottom: "4rem" }}>
+          <div
+            className="connection"
+            key={src}
+            style={{ marginBottom: "4rem" }}
+          >
+            <Loader />
             <header>{genre}</header>
             <h2>{title}</h2>
             <Video title={title} src={src} />

@@ -5,14 +5,14 @@ import photo from "../images/8-bit-head.png"
 export default function About() {
   return (
     <div className="content">
-      <Name text="about_me>" />
+      <Name text="about_me" />
 
       <p>
         Hello, my name is Paolo, I am a freelance web developer, web designer,
-        UI/UX, music composer and digital content creator.
+        UI/UX developer, music composer and digital content creator.
       </p>
       <p>
-        My <span className="blue">const</span>ant passion in IT and{" "}
+        My <span className="blue">const</span>ant study and passion in IT and{" "}
         <span className="pink">new</span>{" "}
         <span className="green">Technologies</span>
         <span className="yellow">()</span> give me the possibility to turn my

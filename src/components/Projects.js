@@ -11,7 +11,7 @@ export default function Projects() {
       allFile(sort: { fields: relativePath }) {
         nodes {
           childrenImageSharp {
-            gatsbyImageData
+            gatsbyImageData(placeholder: BLURRED)
           }
           relativePath
         }

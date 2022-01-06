@@ -1,73 +1,67 @@
 import React from "react"
-import { GoMarkGithub } from "react-icons/go"
 
 const links = [
+  // {
+  //   id: 0,
+  //   url: (
+  //     <a
+  //       href="https://github.com/PaoloCatalano"
+  //       target="_blank"
+  //       rel="noopener noreferrer"
+  //     >
+  //       github
+  //     </a>
+  //   ),
+  // },
   {
-    id: 0,
-    icon: <GoMarkGithub />,
+    id: 1,
     url: (
       <a
-        href="https://github.com/PaoloCatalano"
+        href="https://www.youtube.com/user/page14x4frames/videos"
         target="_blank"
         rel="noopener noreferrer"
       >
-        github
+        youtube
       </a>
     ),
   },
-  // {
-  //   id: 1,
-  //   icon: <IoLogoYoutube />,
-  //   url: (
-  //     <a
-  //       href="https://www.youtube.com/user/page14x4frames/videos"
-  //       target="_blank"
-  //       rel="noopener noreferrer"
-  //     >
-  //       youtube
-  //     </a>
-  //   ),
-  // },
-  // {
-  //   id: 2,
-  //   icon: <SiBandcamp />,
-  //   url: (
-  //     <a
-  //       href="https://page14.bandcamp.com/"
-  //       target="_blank"
-  //       rel="noopener noreferrer"
-  //     >
-  //       bandcamp
-  //     </a>
-  //   ),
-  // },
-  // {
-  //   id: 3,
-  //   icon: <GrSoundcloud />,
-  //   url: (
-  //     <a
-  //       href="https://soundcloud.com/tt-fourteen"
-  //       target="_blank"
-  //       rel="noopener noreferrer"
-  //     >
-  //       soundcloud
-  //     </a>
-  //   ),
-  // },
-  // {
-  //   id: 4,
-  //   icon: <CgShapeHexagon />,
-  //   url: (
-  //     <a
-  //       href="https://www.jamendo.com/artist/368230/page-14"
-  //       target="_blank"
-  //       rel="noopener noreferrer"
-  //     >
-  //       jamendo
-  //     </a>
-  //   ),
-  // },
-  // {
+  {
+    id: 2,
+    url: (
+      <a
+        href="https://page14.bandcamp.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        bandcamp
+      </a>
+    ),
+  },
+  {
+    id: 3,
+    url: (
+      <a
+        href="https://soundcloud.com/tt-fourteen"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        soundcloud
+      </a>
+    ),
+  },
+  {
+    id: 4,
+    url: (
+      <a
+        href="https://www.jamendo.com/artist/368230/page-14"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        jamendo
+      </a>
+    ),
+  },
+  //{
   //   id: 5,
   //   icon: <SiInstagram />,
   //   url: (

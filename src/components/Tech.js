@@ -5,7 +5,7 @@ import TechTemplate from "./TechTemplate"
 export default function Tech() {
   return (
     <div className="content">
-      <Name text="technologies>" />
+      <Name text="technologies" />
       <p>
         The <span className="blue">typeof</span> programming languages that I
         use include JavaScript, HTML5, CSS3 and Java.

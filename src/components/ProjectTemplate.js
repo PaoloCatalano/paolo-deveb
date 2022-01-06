@@ -15,7 +15,7 @@ export default function ProjectTemplate({
   const image = getImage(photos[id - 1].childrenImageSharp[0])
   return (
     <>
-      <div className="card">
+      <div className={`card card-${id}`}>
         <div className="hero-card">
           <div className="card-pic-frame">
             <div className="card-name">
@@ -30,6 +30,7 @@ export default function ProjectTemplate({
         </div>
         <div>
           <p className="card-title">{title}</p>
+          <div className="inset-line"></div>
         </div>
         <div>
           <span className="card-label">description_ </span>
@@ -45,6 +46,7 @@ export default function ProjectTemplate({
             ))}
           </div>
         </div>
+        <div className="inset-line"></div>
         <div className="card-link">
           <a href={url} target="_blank" rel="noopener noreferrer">
             Go to website
