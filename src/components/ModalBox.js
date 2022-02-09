@@ -3,7 +3,7 @@ import React from "react"
 export default function ModalBox({
   children,
   closeFunction,
-  resize = "both",
+  resize = "none",
   top = "6%",
   width = "100%",
 }) {
@@ -27,7 +27,7 @@ export default function ModalBox({
           maxWidth: "900px",
           minHeight: 100,
         }}
-        className="neon-shadow"
+        className="deeper-shadow"
       >
         <button onClick={closeFunction} className="close-icon">
           +

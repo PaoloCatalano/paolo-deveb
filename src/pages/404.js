@@ -1,8 +1,9 @@
 import React from "react"
 import Name from "../components/Name"
 import Seo from "../components/Seo"
-import { Link } from "gatsby"
 import gif from "../images/paolo_deveb.gif"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 export default function ErrorPage() {
   const desc = "This page has been formatted"
 
@@ -13,9 +14,16 @@ export default function ErrorPage() {
         <div className="center cursor">404 ERROR</div>
         <Name text={desc} />
 
-        <Link to="/" className="flick-neon">
+        <AniLink
+          swipe
+          direction="up"
+          top="exit"
+          exitOffset={80}
+          to="/"
+          className="flick-neon"
+        >
           Home
-        </Link>
+        </AniLink>
 
         <img
           src={gif}

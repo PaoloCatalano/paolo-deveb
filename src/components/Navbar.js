@@ -1,6 +1,7 @@
 import React from "react"
 import { useGlobalContext } from "../context/context"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 export default function Navbar() {
   const {
     isAboutOpen,
@@ -56,7 +57,9 @@ export default function Navbar() {
           }}
           disabled={isTechOpen || isAboutOpen || isContactOpen}
         >
-          <Link to="/music">music</Link>
+          <AniLink paintDrip hex="#1c1c35" duration={1} to="music">
+            music
+          </AniLink>
         </button>
       </ul>
     </nav>

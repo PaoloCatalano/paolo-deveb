@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 import Layout from "../components/Layout"
 import ModalBox from "../components/ModalBox"
 import Name from "../components/Name"
@@ -9,6 +9,7 @@ import Tech from "../components/Tech"
 import { useGlobalContext } from "../context/context"
 import Footer from "../components/Footer"
 import { GoMarkGithub } from "react-icons/go"
+import useOnClickOutside from "../utils/useOnClickOutside"
 
 export default function Home() {
   const {
@@ -19,6 +20,13 @@ export default function Home() {
     isTechOpen,
     setIsTechOpen,
   } = useGlobalContext()
+
+  const refAbout = useRef()
+  const refContact = useRef()
+  const refTech = useRef()
+  useOnClickOutside(refAbout, () => setIsAboutOpen(false))
+  useOnClickOutside(refContact, () => setIsContactOpen(false))
+  useOnClickOutside(refTech, () => setIsTechOpen(false))
 
   const aboutProps = {
     closeFunction: () => {
@@ -100,17 +108,23 @@ export default function Home() {
       </div>
       {isAboutOpen && (
         <ModalBox {...aboutProps}>
-          <About />
+          <div ref={refAbout}>
+            <About />
+          </div>
         </ModalBox>
       )}
       {isContactOpen && (
         <ModalBox {...contactProps}>
-          <Contact />
+          <div ref={refContact}>
+            <Contact />
+          </div>
         </ModalBox>
       )}
       {isTechOpen && (
         <ModalBox {...techProps}>
-          <Tech />
+          <div ref={refTech}>
+            <Tech />
+          </div>
         </ModalBox>
       )}
     </Layout>

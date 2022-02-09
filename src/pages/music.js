@@ -1,10 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 import Seo from "../components/Seo"
 import Name from "../components/Name"
 import EmbedMusic from "../components/EmbedMusic"
 import Footer from "../components/Footer"
 import Links from "../components/Links"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default function Music() {
   const [isTitleComplete, setIsTitleComplete] = React.useState(false)
@@ -25,7 +25,9 @@ export default function Music() {
       <nav>
         <Links>
           <button style={{ margin: "0 1rem 0.5rem 1rem" }}>
-            <Link to="/">Home</Link>
+            <AniLink to="/" swipe direction="right" top="exit" exitOffset={80}>
+              home
+            </AniLink>
           </button>
         </Links>
       </nav>
