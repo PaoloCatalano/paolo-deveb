@@ -57,7 +57,7 @@ export default function Navbar() {
           }}
           disabled={isTechOpen || isAboutOpen || isContactOpen}
         >
-          <AniLink paintDrip hex="#1c1c35" duration={1} to="music">
+          <AniLink paintDrip hex="#00aa00" duration={1.5} to="music">
             music
           </AniLink>
         </button>
