@@ -44,6 +44,11 @@ const techs = [
         url: "https://www.mongodb.com/",
         desc: <span> modern and famous web app database</span>,
       },
+      {
+        title: "Firebase",
+        url: "https://firebase.google.com/",
+        desc: <span> back-end by Google for fast app development</span>,
+      },
     ],
   },
   {

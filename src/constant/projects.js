@@ -1,12 +1,12 @@
 const projects = [
   {
     id: 1,
-    title: "Costanza Dicorrado",
-    url: "https://www.costanzadicorrado.com",
+    title: "Miu Shop",
+    url: "https://miu-shop.vercel.app/landing",
     desc:
-      "Landing page with CTA buttons and artistic portfolio of this young but talented Italian Make Up Artist",
-    tech: ["Gatsby.js", "Contentful", "Netlify"],
-    git: "https://github.com/PaoloCatalano/costanzadicorrado",
+      "E-Commerce website with online payment, admin route private and RESTful API for products management",
+    tech: ["Next.js", "MongoDB", "Vercel"],
+    git: "https://github.com/PaoloCatalano/miu-shop",
   },
   {
     id: 2,
