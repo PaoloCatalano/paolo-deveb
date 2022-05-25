@@ -10,6 +10,7 @@ import { useGlobalContext } from "../context/context"
 import Footer from "../components/Footer"
 import { GoMarkGithub } from "react-icons/go"
 import useOnClickOutside from "../utils/useOnClickOutside"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export default function Home() {
   const {
@@ -77,6 +78,13 @@ export default function Home() {
                 <h2>See my main projects:</h2>
                 <Projects />
               </section>
+              <div style={{ marginTop: "5rem" }}>
+                <center className="neon">
+                  <AniLink paintDrip hex="#00aa00" duration={1.5} to="projects">
+                    All Projects
+                  </AniLink>
+                </center>
+              </div>
               <div style={{ marginTop: "5rem" }}>
                 <h2>You can find me on:</h2>
                 <ul className="links">

@@ -1,6 +1,7 @@
 import React from "react"
 import Name from "../components/Name"
 import { GoMarkGithub } from "react-icons/go"
+import { MdDoNotDisturbOff } from "react-icons/md"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function ProjectTemplate({
@@ -11,11 +12,13 @@ export default function ProjectTemplate({
   id,
   tech,
   url,
+  maxProjects,
 }) {
-  const image = getImage(photos[id - 1].childrenImageSharp[0])
+  // const image = getImage(photos[maxProjects ? 3 : id - 1].childrenImageSharp[0])
+  const image = getImage(photos[0].childrenImageSharp[0])
   return (
     <>
-      <div className={`card card-${id}`}>
+      <div className={`card card-${maxProjects ? 4 : id}`}>
         <div className="hero-card">
           <div className="card-pic-frame">
             <div className="card-name">
@@ -23,10 +26,17 @@ export default function ProjectTemplate({
             </div>
             <GatsbyImage image={image} alt={title} className="card-pic" />
           </div>
-          <a href={git} target="_blank" rel="noopener noreferrer">
-            <div>repo</div>
-            <GoMarkGithub />
-          </a>
+          {git ? (
+            <a href={git} target="_blank" rel="noopener noreferrer">
+              <div>repo</div>
+              <GoMarkGithub />
+            </a>
+          ) : (
+            <a href="/" style={{ pointerEvents: "none" }}>
+              <div>repo</div>
+              <MdDoNotDisturbOff />
+            </a>
+          )}
         </div>
         <div>
           <p className="card-title">{title}</p>

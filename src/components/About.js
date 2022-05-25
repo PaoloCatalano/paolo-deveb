@@ -1,8 +1,25 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Name from "../components/Name"
 import photo from "../images/8-bit-head.png"
 
 export default function About() {
+  const [pic, setPic] = useState(photo)
+
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      setPic("#!")
+    }, 2000)
+
+    const timer2 = setTimeout(() => {
+      setPic(photo)
+    }, 6500)
+
+    return () => {
+      clearTimeout(timer1)
+      return clearTimeout(timer2)
+    }
+  }, [])
+
   return (
     <div className="content">
       <Name text="about_me" />
@@ -19,42 +36,12 @@ export default function About() {
         hobby into my work.
       </p>
       <div className="loading">
-        <img src={photo} alt="profile head" />
+        <img
+          src={pic}
+          alt="__FAKE LOW CONNECTION, NO WORRIES! I'M JUST A NOSTALGIC OF THE SLOWER LOADING TIME :D"
+        />
       </div>
-      <p style={{ fontSize: 5 }}>
-        <span role="img" aria-label="P">
-          🅿️
-        </span>
-        <span role="img" aria-label="A">
-          🅰️
-        </span>
-        <span role="img" aria-label="O">
-          📀
-        </span>{" "}
-        <span role="img" aria-label="L">
-          🛴
-        </span>
-        <span role="img" aria-label="O">
-          📀
-        </span>{" "}
-      </p>
-      <p style={{ fontSize: 5 }}>
-        <span role="img" aria-label="D">
-          🌛
-        </span>
-        <span role="img" aria-label="E">
-          📧
-        </span>
-        <span role="img" aria-label="V">
-          🖖
-        </span>
-        <span role="img" aria-label="E">
-          📧
-        </span>
-        <span role="img" aria-label="B">
-          🅱️️
-        </span>
-      </p>
+      <p></p>
     </div>
   )
 }

@@ -1,15 +1,47 @@
 const projects = [
   {
     id: 1,
-    title: "Miu Shop",
-    url: "https://miu-shop.vercel.app/landing",
-    desc:
-      "E-Commerce website with online payment, admin route private and RESTful API for products management",
-    tech: ["Next.js", "MongoDB", "Vercel"],
-    git: "https://github.com/PaoloCatalano/miu-shop",
+    title: "Fido Dogsitter",
+    url: "https://fidodogsitter.netlify.app",
+    desc: "Local Business Website and collection of dogs pictures",
+    tech: ["Gatsby.js", "Strapi", "Cloudinary"],
+    git: "https://github.com/PaoloCatalano/fido",
   },
   {
     id: 2,
+    title: "Drinks Database",
+    url: "https://drinkdb.netlify.app/",
+    desc: "Big collection of cocktails and drinks from thecocktaildb.com",
+    tech: ["React.js", "thecocktaildb", "API"],
+    git: "https://github.com/PaoloCatalano/DrinksDB",
+  },
+  {
+    id: 3,
+    title: "Movie & Game DB",
+    url: "https://moviegames.netlify.app/",
+    desc: "Big collection of movie and game titles from omdbapi.com",
+    tech: ["React.js", "omdbapi", "API"],
+    git: "https://github.com/PaoloCatalano/MovieGamesDB",
+  },
+  {
+    id: 4,
+    title: "Level Up Quiz",
+    url: "https://levelupquiz.netlify.app/",
+    desc: "Quiz game create by fetching trivial database data from opentdb.com",
+    tech: ["React.js", "opentdb", "API"],
+    git: "https://github.com/PaoloCatalano/levelupquiz",
+  },
+  {
+    id: 5,
+    title: "Ilaria Serena",
+    url: "https://www.ilariaserena.cloud",
+    desc:
+      "Multilingual Business Website used for showing and booking services. Form with options for receiving questions",
+    tech: ["Gatsby.js", "Contentful", "Netlify"],
+    git: "https://github.com/PaoloCatalano/ilariaserena",
+  },
+  {
+    id: 6,
     title: "Robertaebasta UK",
     url: "https://www.robertaebasta.co.uk",
     desc:
@@ -18,7 +50,25 @@ const projects = [
     git: "https://github.com/PaoloCatalano/robertaebastalondon",
   },
   {
-    id: 3,
+    id: 7,
+    title: "Miu Drive",
+    url: "https://miu-drive.netlify.app/",
+    desc:
+      "Private drive storage, only login, creation of folders and uploading files",
+    tech: ["React.js", "Firebase", "Bootstrap"],
+    git: "https://github.com/PaoloCatalano/firebase-drive",
+  },
+  {
+    id: 8,
+    title: "Costanza Dicorrado",
+    url: "https://www.costanzadicorrado.com",
+    desc:
+      "Landing page with CTA buttons and artistic portfolio of this young and talented Italian Make Up Artist",
+    tech: ["Gatsby.js", "Contentful", "Netlify"],
+    git: "https://github.com/PaoloCatalano/costanzadicorrado",
+  },
+  {
+    id: 9,
     title: "Alex Television",
     url: "https://alextv.netlify.app",
     desc:
@@ -26,97 +76,42 @@ const projects = [
     tech: ["Gatsby functions", "API", "Netlify"],
     git: "https://github.com/PaoloCatalano/alextv",
   },
+  {
+    id: 10,
+    title: "Miu Shop",
+    url: "https://miu-shop.vercel.app/landing",
+    desc:
+      "E-Commerce website with online payment, admin route private and RESTful API for products management",
+    tech: ["Next.js", "MongoDB", "Vercel"],
+    git: "https://github.com/PaoloCatalano/miu-shop",
+  },
+  {
+    id: 11,
+    title: "Bookkeeping App",
+    url: "https://bookkeep-app.herokuapp.com/",
+    desc:
+      "Full-Stack MERN application used to keep track of your monthly expenses and quickly visualize them on graphics using Recharts",
+    tech: ["MERN", "MongoDB", "Heroku"],
+    git: "",
+  },
+  {
+    id: 12,
+    title: "Redux Toolkit",
+    url: "https://redux-toolkit-example-shop.netlify.app",
+    desc:
+      "Online Shop example using the astonishing and efficient Redux Toolkit for state management",
+    tech: ["Redux", "Immer", "Reselect"],
+    git: "https://github.com/PaoloCatalano/miu-shop",
+  },
+  {
+    id: 13,
+    title: "Portfolio",
+    url: "https://paolocatalano.github.io/portfolio/dist/index.html",
+    desc:
+      "Personal portfolio web site using plain HTML and SCSS, in a modern graphic style inspired by 〞Brutalism 〟art. All the images are customizable and  drawn-tailored by my team",
+    tech: ["SCSS", "Github Pages", "HTML"],
+    git: "https://github.com/PaoloCatalano/portfolio",
+  },
 ]
-
-// const OLDprojects = [
-//   {
-//     url: (
-//       <a
-//         href="https://www.costanzadicorrado.com"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//       >
-//         costanza dicorrado
-//       </a>
-//     ),
-//   },
-//   {
-//     url: (
-//       <a
-//         href="https://www.robertaebasta.co.uk"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//       >
-//         robertaebasta.co.uk
-//       </a>
-//     ),
-//   },
-//   {
-//     url: (
-//       <a
-//         href="https://www.ilariaserena.cloud"
-//         target="_blank"
-//         rel="noopener noreferrer"
-//       >
-//         ilariaserena
-//       </a>
-//     ),
-//   },
-// {
-//   url: (
-//     <a
-//       href="https://www.theivycoworking.com"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       theivycoworking
-//     </a>
-//   ),
-// },
-// {
-//   url: (
-//     <a
-//       href="https://levelupquiz.netlify.app"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       level up quiz
-//     </a>
-//   ),
-// },
-// {
-//   url: (
-//     <a
-//       href="https://moviegames.netlify.app"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       moviegames DB
-//     </a>
-//   ),
-// },
-// {
-//   url: (
-//     <a
-//       href="https://drinkdb.netlify.app"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       drinks DB
-//     </a>
-//   ),
-// },
-// {
-//   url: (
-//     <a
-//       href="https://fidodogsitter.netlify.app"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       fido dogsitter
-//     </a>
-//   ),
-// },
-//]
 
 export default projects

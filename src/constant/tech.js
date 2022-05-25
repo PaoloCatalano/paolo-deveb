@@ -42,7 +42,7 @@ const techs = [
       {
         title: "MongoDB",
         url: "https://www.mongodb.com/",
-        desc: <span> modern and famous web app database</span>,
+        desc: <span> modern and famous web app using NoSQL database</span>,
       },
       {
         title: "Firebase",

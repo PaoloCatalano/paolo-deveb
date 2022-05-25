@@ -25,7 +25,7 @@ export default function Music() {
       <nav>
         <Links>
           <button style={{ margin: "0 1rem 0.5rem 1rem" }}>
-            <AniLink to="/" swipe direction="right" top="exit" exitOffset={80}>
+            <AniLink to="/" swipe direction="right" top="exit" entryOffset={80}>
               home
             </AniLink>
           </button>

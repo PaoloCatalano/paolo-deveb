@@ -58,6 +58,9 @@
   --neon-shadow-yellow: 5px 5px rgba(249, 219, 109, 0.4),
     10px 10px rgba(249, 219, 109, 0.3), 15px 15px rgba(249, 219, 109, 0.2),
     20px 20px rgba(249, 219, 109, 0.1), 25px 25px rgba(249, 219, 109, 0.05);
+  --neon-shadow-black: 5px 5px rgba(0, 0, 0, 0.4), 10px 10px rgba(0, 0, 0, 0.3),
+    15px 15px rgba(0, 0, 0, 0.2), 20px 20px rgba(0, 0, 0, 0.1),
+    25px 25px rgba(0, 0, 0, 0.05);
 }
 ::selection {
   color: var(--text);
@@ -534,25 +537,27 @@ a:hover {
   background-color: var(--background-2);
   bottom: 0;
   left: 0;
-  animation: load 5s forwards step-start 1;
+  animation: load 7s forwards step-start 1;
 }
 @keyframes load {
   0% {
     height: 100%;
   }
-  5% {
-    height: 100%;
+  10% {
+    height: 90%;
   }
-  25% {
-    height: 75%;
+  20% {
+    height: 80%;
+  }
+  30% {
+    height: 70%;
+  }
+  40% {
+    height: 60%;
   }
   50% {
-    height: 50%;
+    height: 0%;
   }
-  75% {
-    height: 25%;
-  }
-
   100% {
     height: 0%;
   }
@@ -812,6 +817,9 @@ select:-webkit-autofill:focus {
 .card-3 {
   box-shadow: var(--neon-shadow-yellow);
 }
+.card-4 {
+  box-shadow: var(--neon-shadow-black);
+}
 .hero-card {
   display: flex;
   flex-direction: row;
@@ -848,6 +856,10 @@ select:-webkit-autofill:focus {
 .card-pic {
   position: absolute;
   z-index: 1;
+}
+.card-pic img {
+  width: calc(100% - 2px) !important;
+  left: 1px !important;
 }
 .card-name {
   position: absolute;
