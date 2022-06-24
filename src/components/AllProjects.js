@@ -24,7 +24,7 @@ export default function Projects({ maxProjects }) {
   return (
     <>
       <ul className="links card-container">
-        {projects.reverse().map(props => {
+        {projects.map(props => {
           const { id, title } = props
           return (
             <li key={id}>

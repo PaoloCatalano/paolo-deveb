@@ -112,6 +112,17 @@ const projects = [
     tech: ["SCSS", "Github Pages", "HTML"],
     git: "https://github.com/PaoloCatalano/portfolio",
   },
+  {
+    id: 14,
+    title: "MartaePietro",
+    url: "https://martaepietro.netlify.app/",
+    desc:
+      "Funny animated website that celebrates the wedding of two friends and collects memories such as photos and videos of them and of the event",
+    tech: ["Next.JS", "Framer Motion", "Netlify"],
+    git: "https://github.com/PaoloCatalano/wedding-pietro-marta-next",
+  },
 ]
 
-export default projects
+const projectReverse = projects.reverse()
+
+export default projectReverse

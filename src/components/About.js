@@ -36,12 +36,12 @@ export default function About() {
         hobby into my work.
       </p>
       <div className="loading">
+        <i>Memories of a loading...</i>
         <img
           src={pic}
           alt="__FAKE LOW CONNECTION, NO WORRIES! I'M JUST A NOSTALGIC OF THE SLOWER LOADING TIME :D"
         />
       </div>
-      <p></p>
     </div>
   )
 }
