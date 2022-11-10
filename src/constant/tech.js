@@ -127,6 +127,16 @@ const techs = [
           </span>
         ),
       },
+      {
+        title: "Render",
+        url: "https://render.com/",
+        desc: (
+          <span>
+            {" "}
+            cloud with TLS certificates, global CDN and auto deploys from Git.
+          </span>
+        ),
+      },
     ],
   },
   {

@@ -88,11 +88,11 @@ const projects = [
   {
     id: 11,
     title: "Bookkeeping App",
-    url: "https://bookkeep-app.herokuapp.com/",
+    url: "https://bookkeeping-app.onrender.com/",
     desc:
       "Full-Stack MERN application used to keep track of your monthly expenses and quickly visualize them on graphics using Recharts",
-    tech: ["MERN", "MongoDB", "Heroku"],
-    git: "",
+    tech: ["MERN", "MongoDB", "Render"],
+    git: "https://github.com/PaoloCatalano/Book-Keeping-App",
   },
   {
     id: 12,
