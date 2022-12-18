@@ -34,7 +34,7 @@ const projects = [
   {
     id: 5,
     title: "Ilaria Serena",
-    url: "https://www.ilariaserena.cloud",
+    url: "https://ilariaserena.netlify.app/",
     desc:
       "Multilingual Business Website used for showing and booking services. Form with options for receiving questions",
     tech: ["Gatsby.js", "Contentful", "Netlify"],
@@ -61,7 +61,7 @@ const projects = [
   {
     id: 8,
     title: "Costanza Dicorrado",
-    url: "https://www.costanzadicorrado.com",
+    url: "https://costanzadicorrado.netlify.app",
     desc:
       "Landing page with CTA buttons and artistic portfolio of this young and talented Italian Make Up Artist",
     tech: ["Gatsby.js", "Contentful", "Netlify"],
