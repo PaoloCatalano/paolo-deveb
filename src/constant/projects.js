@@ -78,12 +78,12 @@ const projects = [
   },
   {
     id: 10,
-    title: "Miu Shop",
-    url: "https://miu-shop.vercel.app/landing",
+    title: "MartaePietro",
+    url: "https://martaepietro.netlify.app/",
     desc:
-      "E-Commerce website with online payment, admin route private and RESTful API for products management",
-    tech: ["Next.js", "MongoDB", "Vercel"],
-    git: "https://github.com/PaoloCatalano/miu-shop",
+      "Funny animated website that celebrates the wedding of two friends and collects memories such as photos and videos of them and of the event",
+    tech: ["Next.JS", "Framer Motion", "Netlify"],
+    git: "https://github.com/PaoloCatalano/wedding-pietro-marta-next",
   },
   {
     id: 11,
@@ -114,12 +114,12 @@ const projects = [
   },
   {
     id: 14,
-    title: "MartaePietro",
-    url: "https://martaepietro.netlify.app/",
+    title: "Miu Station Store",
+    url: "https://miustationstore.netlify.app/",
     desc:
-      "Funny animated website that celebrates the wedding of two friends and collects memories such as photos and videos of them and of the event",
-    tech: ["Next.JS", "Framer Motion", "Netlify"],
-    git: "https://github.com/PaoloCatalano/wedding-pietro-marta-next",
+      "E-Commerce website with private admin route and RESTful API for products management",
+    tech: ["Next.js", "MongoDB", "Netlify"],
+    git: "https://github.com/PaoloCatalano/Miu_Station_Store",
   },
 ]
 
