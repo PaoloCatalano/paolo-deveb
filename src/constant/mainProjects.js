@@ -11,7 +11,7 @@ const mainProjects = [
   {
     id: 2,
     title: "Robertaebasta UK",
-    url: "https://www.robertaebasta.co.uk",
+    url: "https://robertaebasta.netlify.app",
     desc:
       "London Art Gallery with a huge collection of masterpieces and an automatic generated details page for each article",
     tech: ["Gatsby.js", "Contentful", "Netlify"],
